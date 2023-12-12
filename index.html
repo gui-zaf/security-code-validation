@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Security Code</title>
+</head>
+
+<body onload="generateCode()">
+    <div class="container">
+        <h1>Verify Code</h1>
+        <div class="inner-container">
+            <p id="codeDisplay"></p>
+            <button onclick="generateCode()"><img src="images/reset.png"></button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="codeInput" placeholder="-----" maxlength="5">
+
+            <button onclick="checkCode()"><img src="images/send.png" alt=""></button>
+        </div>
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
